@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.restart {
+  margin: 1rem;
+}
+
+.container {
+  display: flex;
+}
+
+.state {
+  width: 50%;
+  padding: 40px;
+}
+
+.lives {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.ascii {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.guess-section {
+  width: 50%;
+  padding: 40px;
+}
+
+.guess-word {
+  margin-bottom: 3rem;
+}
+
+.button-letters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  width: 300px;
+  margin: auto;
+}
+
+.guess-word {
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}

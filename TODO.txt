@@ -1,0 +1,7 @@
+Game logic
+1. Fetch a list of words
+2. Select a word from the list
+3. Create game loop
+
+
+Upon clicking on a letter, it should be disabled
