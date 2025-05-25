@@ -14,7 +14,7 @@ let newWord;
 
 clicks.addEventListener('click', (e) => {
   if (e.target.matches('button[data-letter]')) {
-    if (lives > 0) {
+    if (lives > 0 && word.includes('_')) {
       const letter = e.target.dataset.letter;
       e.target.disabled = true;
       guess.push(letter);
@@ -31,7 +31,7 @@ clicks.addEventListener('click', (e) => {
 restartButton.addEventListener('click', init);
 
 async function fetchWord() {
-  const data = await fetch('https://random-word-api.herokuapp.com/word');
+  const data = await fetch('https://random-word-api.vercel.app/api?words=30');
   const word = await data.json();
   return word[0];
 }
@@ -66,6 +66,7 @@ async function init() {
   hangmanState.textContent = `You now have ${lives} lives`;
   hangmanAscii.textContent = stages[lives];
   updateWord();
+  console.log(newWord);
 }
 
 init();

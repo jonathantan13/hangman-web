@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: 'Patrick Hand', cursive;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font: inherit;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .restart {
@@ -10,26 +27,30 @@
 
 .container {
   display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 .state {
+  max-width: 40rem;
+  width: 50%;
+  padding: 40px;
+}
+
+.guess-section {
+  max-width: 40rem;
   width: 50%;
   padding: 40px;
 }
 
 .lives {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .ascii {
   font-size: 3rem;
   text-align: center;
-}
-
-.guess-section {
-  width: 50%;
-  padding: 40px;
 }
 
 .guess-word {
